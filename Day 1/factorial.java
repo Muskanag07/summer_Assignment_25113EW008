@@ -1,0 +1,20 @@
+import java.util.Scanner;
+//Write a program to Find factorial of a number.
+public class factorial {
+    public static void main(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("ENTER THE VALUE OF n");
+        int n = input.nextInt();
+        Factorial(n);
+        input.close();
+
+
+    }
+    static void Factorial(int a){
+        int fact=1;
+        for (int i=1;i<=a;i++){
+            fact*=i;
+        }
+        System.out.println("Factorial of "+a+" is:"+fact);
+    }
+}
